@@ -27,8 +27,8 @@ module.exports = {
         test: /\.(webm|mp4)$/,
         loader: 'file-loader',
         options: {
-          name: '[name].[ext]'
-        }
+          name: '[name].[ext]',
+        },
       },
     ],
   },

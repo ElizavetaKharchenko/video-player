@@ -1,7 +1,6 @@
-import "@babel/polyfill";
+import '@babel/polyfill';
 
 export default () => {
-
   const video = document.getElementById('mainVideo');
   const playPause = document.getElementById('playPause');
   const dynamic = document.getElementById('dynamic');
@@ -10,16 +9,16 @@ export default () => {
   const progressBar = document.querySelector('.progress-bar');
   const progressElem = document.querySelector('.progress');
 
-  const togglePlayPause = () => video.paused ? video.play() : video.pause();
+  const togglePlayPause = () => (video.paused ? video.play() : video.pause());
 
   video.onplay = () => {
-    playPause.classList.replace('fa-play-circle', 'fa-stop')
+    playPause.classList.replace('fa-play-circle', 'fa-stop');
     overlayPlayBtn.style.visibility = 'hidden';
   };
 
   video.onautoplay = () => {
     console.log('haha');
-  }
+  };
   video.onpause = () => {
     playPause.classList.replace('fa-stop', 'fa-play-circle');
     overlayPlayBtn.style.visibility = 'visible';
@@ -28,7 +27,7 @@ export default () => {
   video.onended = () => {
     overlayReloadBtn.style.visibility = 'visible';
     overlayPlayBtn.style.visibility = 'hidden';
-  }
+  };
 
   overlayReloadBtn.style.visibility = 'hidden';
 
@@ -44,18 +43,19 @@ export default () => {
     overlayReloadBtn.style.visibility = 'hidden';
     video.load();
     video.play();
-  })
+  });
 
   dynamic.addEventListener('click', () => {
     video.muted = !video.muted;
-    dynamic.classList.contains('fa-volume-off') ? dynamic.classList.replace('fa-volume-off', 'fa-volume-up') :
+    if (dynamic.classList.contains('fa-volume-off')) {
+      dynamic.classList.replace('fa-volume-off', 'fa-volume-up');
+    } else {
       dynamic.classList.replace('fa-volume-up', 'fa-volume-off');
+    }
   });
-  
+
   video.addEventListener('timeupdate', () => {
-    let progress = Math.floor(video.currentTime) / Math.floor(video.duration);
+    const progress = Math.floor(video.currentTime) / Math.floor(video.duration);
     progressBar.style.width = `${Math.floor(progress * progressElem.offsetWidth)}px`;
   }, false);
-  
-
 };
