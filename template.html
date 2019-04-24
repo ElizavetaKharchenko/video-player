@@ -4,13 +4,17 @@
     <title>Video-player</title>
   </head>
   <body>
-    <video id="mainVideo" width="480" height="270" muted autoplay preload>
-      <source src="src/video/mainVideo.mp4" type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"' />
-      <source src="src/video/mainVideo.webm" type='video/webm; codecs="vorbis,vp8"'/> 
-    </video>
-    <div id="controls">
-      <a class="btn" href="#"><i class="fas fa-play-circle"></i></a>
-      <a class="btn" href="#"><i class="fas fa-volume-off"></i></a>
+    <div class="container">
+      <div class="video-container">
+        <video id="mainVideo" width="768" height="432" muted autoplay preload>
+          <source src="../src/video/mainVideo.mp4" type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"' />
+          <source src="../src/video/mainVideo.webm" type='video/webm; codecs="vorbis,vp8"'/>
+        </video>
+      </div>
+      <div id="controls">
+        <a class="btn" href="#"><i id="playPause" class="fas fa-play-circle"></i></a>
+        <a class="btn" href="#"><i id="dynamic" class="fas fa-volume-off"></i></a>
+      </div>
     </div>
   </body>
 </html>
