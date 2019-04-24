@@ -7,3 +7,15 @@
   top: 10%;
   left: 30%;
 }
+
+.video-container {
+  position: relative;
+}
+
+.overlay-btn {
+  visibility: hidden;
+  position: absolute;
+  top: 40%;
+  left: 47%;
+  color: grey;
+}
