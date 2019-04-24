@@ -12,8 +12,7 @@
   position: relative;
 }
 
-.overlay-btn {
-  visibility: hidden;
+.overlay-btn-play, .overlay-btn-reload {
   position: absolute;
   top: 40%;
   left: 47%;
