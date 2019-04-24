@@ -1,6 +1,4 @@
-// import WatchJS from 'melanke-watchjs';
 import "@babel/polyfill";
-import formattedTime from './utils';
 
 export default () => {
 
@@ -9,6 +7,8 @@ export default () => {
   const dynamic = document.getElementById('dynamic');
   const overlayPlayBtn = document.getElementById('overlay-btn-play');
   const overlayReloadBtn = document.getElementById('overlay-btn-reload');
+  const progressBar = document.querySelector('.progress-bar');
+  const progressElem = document.querySelector('.progress');
 
   const togglePlayPause = () => video.paused ? video.play() : video.pause();
 
@@ -28,7 +28,6 @@ export default () => {
 
   overlayReloadBtn.style.visibility = 'hidden';
 
-  
   playPause.addEventListener('click', () => {
     togglePlayPause();
   });
@@ -38,9 +37,9 @@ export default () => {
   });
 
   overlayReloadBtn.addEventListener('click', () => {
+    overlayReloadBtn.style.visibility = 'hidden';
     video.load();
     video.play();
-    overlayReloadBtn.style.visibility = 'hidden';
   })
 
   dynamic.addEventListener('click', () => {
@@ -49,6 +48,10 @@ export default () => {
       dynamic.classList.replace('fa-volume-up', 'fa-volume-off');
   });
   
+  video.addEventListener('timeupdate', () => {
+    let progress = Math.floor(video.currentTime) / Math.floor(video.duration);
+    progressBar.style.width = `${Math.floor(progress * progressElem.offsetWidth)}px`;
+  }, false);
   
 
 };
