@@ -1,0 +1,161 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`overlay play button hidden on play 1`] = `
+"<head></head><body>
+
+  
+    <title>Video-player</title>
+  
+  
+    <div class=\\"container\\">
+      <div class=\\"video-container\\">
+        <video id=\\"mainVideo\\" width=\\"768\\" height=\\"432\\" muted=\\"\\" autoplay=\\"\\">
+          <source src=\\"mainVideo.mp4\\" type=\\"video/mp4;codecs=&quot;avc1.42E01E, mp4a.40.2&quot;\\">
+          <source src=\\"mainVideo.webm\\" type=\\"video/webm; codecs=&quot;vorbis,vp8&quot;\\">
+        </video>
+        <div class=\\"overlay-btn-play\\">
+          <i id=\\"overlay-btn-play\\" class=\\"fas fa-play-circle fa-5x\\" style=\\"visibility: hidden;\\"></i>
+        </div>
+        <div class=\\"overlay-btn-reload\\">
+          <i id=\\"overlay-btn-reload\\" class=\\"fas fa-sync-alt fa-5x\\" style=\\"visibility: hidden;\\"></i>
+        </div>
+      </div>
+      <div id=\\"controls\\">
+        <a class=\\"btn\\" href=\\"#\\"><i id=\\"playPause\\" class=\\"fas fa-stop\\"></i></a>
+        <div class=\\"progress\\">
+          <div class=\\"progress-bar\\"></div>
+        </div>
+        <a class=\\"btn\\" href=\\"#\\"><i id=\\"dynamic\\" class=\\"fas fa-volume-off\\"></i></a>
+      </div>
+    </div>
+  
+</body>"
+`;
+
+exports[`overlay play button show on stop 1`] = `
+"<head></head><body>
+
+  
+    <title>Video-player</title>
+  
+  
+    <div class=\\"container\\">
+      <div class=\\"video-container\\">
+        <video id=\\"mainVideo\\" width=\\"768\\" height=\\"432\\" muted=\\"\\" autoplay=\\"\\">
+          <source src=\\"mainVideo.mp4\\" type=\\"video/mp4;codecs=&quot;avc1.42E01E, mp4a.40.2&quot;\\">
+          <source src=\\"mainVideo.webm\\" type=\\"video/webm; codecs=&quot;vorbis,vp8&quot;\\">
+        </video>
+        <div class=\\"overlay-btn-play\\">
+          <i id=\\"overlay-btn-play\\" class=\\"fas fa-play-circle fa-5x\\" style=\\"visibility: visible;\\"></i>
+        </div>
+        <div class=\\"overlay-btn-reload\\">
+          <i id=\\"overlay-btn-reload\\" class=\\"fas fa-sync-alt fa-5x\\" style=\\"visibility: hidden;\\"></i>
+        </div>
+      </div>
+      <div id=\\"controls\\">
+        <a class=\\"btn\\" href=\\"#\\"><i id=\\"playPause\\" class=\\"fas fa-play-circle\\"></i></a>
+        <div class=\\"progress\\">
+          <div class=\\"progress-bar\\"></div>
+        </div>
+        <a class=\\"btn\\" href=\\"#\\"><i id=\\"dynamic\\" class=\\"fas fa-volume-off\\"></i></a>
+      </div>
+    </div>
+  
+</body>"
+`;
+
+exports[`overlay reload button show on end 1`] = `
+"<head></head><body>
+
+  
+    <title>Video-player</title>
+  
+  
+    <div class=\\"container\\">
+      <div class=\\"video-container\\">
+        <video id=\\"mainVideo\\" width=\\"768\\" height=\\"432\\" muted=\\"\\" autoplay=\\"\\">
+          <source src=\\"mainVideo.mp4\\" type=\\"video/mp4;codecs=&quot;avc1.42E01E, mp4a.40.2&quot;\\">
+          <source src=\\"mainVideo.webm\\" type=\\"video/webm; codecs=&quot;vorbis,vp8&quot;\\">
+        </video>
+        <div class=\\"overlay-btn-play\\">
+          <i id=\\"overlay-btn-play\\" class=\\"fas fa-play-circle fa-5x\\" style=\\"visibility: hidden;\\"></i>
+        </div>
+        <div class=\\"overlay-btn-reload\\">
+          <i id=\\"overlay-btn-reload\\" class=\\"fas fa-sync-alt fa-5x\\" style=\\"visibility: visible;\\"></i>
+        </div>
+      </div>
+      <div id=\\"controls\\">
+        <a class=\\"btn\\" href=\\"#\\"><i id=\\"playPause\\" class=\\"fas fa-play-circle\\"></i></a>
+        <div class=\\"progress\\">
+          <div class=\\"progress-bar\\"></div>
+        </div>
+        <a class=\\"btn\\" href=\\"#\\"><i id=\\"dynamic\\" class=\\"fas fa-volume-off\\"></i></a>
+      </div>
+    </div>
+  
+</body>"
+`;
+
+exports[`sound 1`] = `
+"<head></head><body>
+
+  
+    <title>Video-player</title>
+  
+  
+    <div class=\\"container\\">
+      <div class=\\"video-container\\">
+        <video id=\\"mainVideo\\" width=\\"768\\" height=\\"432\\" muted=\\"\\" autoplay=\\"\\">
+          <source src=\\"mainVideo.mp4\\" type=\\"video/mp4;codecs=&quot;avc1.42E01E, mp4a.40.2&quot;\\">
+          <source src=\\"mainVideo.webm\\" type=\\"video/webm; codecs=&quot;vorbis,vp8&quot;\\">
+        </video>
+        <div class=\\"overlay-btn-play\\">
+          <i id=\\"overlay-btn-play\\" class=\\"fas fa-play-circle fa-5x\\"></i>
+        </div>
+        <div class=\\"overlay-btn-reload\\">
+          <i id=\\"overlay-btn-reload\\" class=\\"fas fa-sync-alt fa-5x\\" style=\\"visibility: hidden;\\"></i>
+        </div>
+      </div>
+      <div id=\\"controls\\">
+        <a class=\\"btn\\" href=\\"#\\"><i id=\\"playPause\\" class=\\"fas fa-play-circle\\"></i></a>
+        <div class=\\"progress\\">
+          <div class=\\"progress-bar\\"></div>
+        </div>
+        <a class=\\"btn\\" href=\\"#\\"><i id=\\"dynamic\\" class=\\"fas fa-volume-up\\"></i></a>
+      </div>
+    </div>
+  
+</body>"
+`;
+
+exports[`start player 1`] = `
+"<head></head><body>
+
+  
+    <title>Video-player</title>
+  
+  
+    <div class=\\"container\\">
+      <div class=\\"video-container\\">
+        <video id=\\"mainVideo\\" width=\\"768\\" height=\\"432\\" muted=\\"\\" autoplay=\\"\\">
+          <source src=\\"mainVideo.mp4\\" type=\\"video/mp4;codecs=&quot;avc1.42E01E, mp4a.40.2&quot;\\">
+          <source src=\\"mainVideo.webm\\" type=\\"video/webm; codecs=&quot;vorbis,vp8&quot;\\">
+        </video>
+        <div class=\\"overlay-btn-play\\">
+          <i id=\\"overlay-btn-play\\" class=\\"fas fa-play-circle fa-5x\\"></i>
+        </div>
+        <div class=\\"overlay-btn-reload\\">
+          <i id=\\"overlay-btn-reload\\" class=\\"fas fa-sync-alt fa-5x\\" style=\\"visibility: hidden;\\"></i>
+        </div>
+      </div>
+      <div id=\\"controls\\">
+        <a class=\\"btn\\" href=\\"#\\"><i id=\\"playPause\\" class=\\"fas fa-play-circle\\"></i></a>
+        <div class=\\"progress\\">
+          <div class=\\"progress-bar\\"></div>
+        </div>
+        <a class=\\"btn\\" href=\\"#\\"><i id=\\"dynamic\\" class=\\"fas fa-volume-off\\"></i></a>
+      </div>
+    </div>
+  
+</body>"
+`;

@@ -1,9 +1,29 @@
 <!doctype html>
 <html>
   <head>
-    <title>Webpack Package</title>
+    <title>Video-player</title>
   </head>
   <body>
-    <div id="point"></div>
+    <div class="container">
+      <div class="video-container">
+        <video id="mainVideo" width="768" height="432" muted autoplay>
+          <source src="mainVideo.mp4" type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"' />
+          <source src="mainVideo.webm" type='video/webm; codecs="vorbis,vp8"'/>
+        </video>
+        <div class="overlay-btn-play">
+          <i id="overlay-btn-play" class="fas fa-play-circle fa-5x"></i>
+        </div>
+        <div class="overlay-btn-reload">
+          <i id="overlay-btn-reload" class="fas fa-sync-alt fa-5x"></i>
+        </div>
+      </div>
+      <div id="controls">
+        <a class="btn" href="#"><i id="playPause" class="fas fa-play-circle"></i></a>
+        <div class="progress">
+          <div class="progress-bar"></div>
+        </div>
+        <a class="btn" href="#"><i id="dynamic" class="fas fa-volume-off"></i></a>
+      </div>
+    </div>
   </body>
 </html>
