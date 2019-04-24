@@ -16,6 +16,10 @@ export default () => {
     playPause.classList.replace('fa-play-circle', 'fa-stop')
     overlayPlayBtn.style.visibility = 'hidden';
   };
+
+  video.onautoplay = () => {
+    console.log('haha');
+  }
   video.onpause = () => {
     playPause.classList.replace('fa-stop', 'fa-play-circle');
     overlayPlayBtn.style.visibility = 'visible';
@@ -33,7 +37,7 @@ export default () => {
   });
 
   overlayPlayBtn.addEventListener('click', () => {
-    video.play();
+    togglePlayPause();
   });
 
   overlayReloadBtn.addEventListener('click', () => {
